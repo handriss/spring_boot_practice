@@ -1,11 +1,14 @@
-package com.example;
+package com.example.main;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.ComponentScan;
 
 import java.util.Arrays;
 
+
+@ComponentScan({"com.example.main", "com.example.services"})
 @SpringBootApplication
 public class DemoApplication {
 
